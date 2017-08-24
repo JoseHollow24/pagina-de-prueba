@@ -1,1 +1,1 @@
-# pagina-de-prueba
+esta pagina es un peueño proyecto para que un compañero se adapte al modelo de trabajo con repositorios disfrutenlo 
