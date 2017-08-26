@@ -32,10 +32,9 @@
 	border: solid #5d6d7e 10px;
 	border-radius: 50px 50px 50px 50px;
 }
-.btn_darksouls{
-	height: 40px;
+.btn_juego{
+	height: 70px;
 	width: 20%;
-	background: url(../img/YouDied.jpg);
 	background-size: 100% 100%;
 	border-radius: 15px;
 	border: solid #5d6d7e 2px;
@@ -46,10 +45,10 @@
 	font-weight: bold;
 	font-size: 30px
 	padding-top: 30px;
-	text-align: center;
+	margin-left: 4%;
 }
 .contenido2 h2{
-	margin-left: 8%;
+	margin-left: 10%;
 	color: white;
 	font-weight: bold;
 	font-size: 30px
