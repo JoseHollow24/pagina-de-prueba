@@ -1,0 +1,18 @@
+.megasliderman{
+	max-height: 500px;
+}
+.imcard{
+	max-height: 180px;
+	height: 100%
+}
+.gust{
+
+	max-height: 150px;
+	max-width: 150px;
+	height: 100%;
+	width: 100%;
+}
+.ico{
+	height: 100px;
+	width: 100px;
+}
