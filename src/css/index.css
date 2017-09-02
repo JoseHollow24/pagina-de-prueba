@@ -1,0 +1,13 @@
+.slider{
+	background: url("../img/tf2.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+
+}
+.slider h1{
+	color: white;
+}
+.imagenes{
+	max-height: 500px;
+}
