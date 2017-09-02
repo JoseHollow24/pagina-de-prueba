@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <title>Megaman</title>
   <link rel="stylesheet" type="text/css" href="src/css/bootstrapt/bootstrap.min.css">
@@ -89,9 +89,9 @@
         <img class="card-img-top img-fluid imcard" src="src/img/megaman/cardmm.png" alt="Card image cap">
         <div class="card-body">
           <h4 class="card-title">Megaman</h4>
-          <p class="card-text">This is a wider card with supporting text below as a</p>
+          <p class="card-text"> primera subserie, ocurre en el año 20XX. Los enfrentamientos son entre Mega Man, creado por Dr. Light y los robot masters del Dr. Wily. La décima y última entrega, se ha disparado la roboenza, causando que ciertos robots y reploids se convirtieran en Mavericks.</p>
         </div>
-        <a type="button" class="btn btn-primary" href="img/cards/ako1.jpg"> Mas Info</a>
+        <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalmegaman1" href="img/cards/ako1.jpg"> Mas Info</a>
       </div>
       <div class="card mb-3">
         <img class="card-img-top img-fluid imcard" src="src/img/megaman/mmx.jpeg" alt="Card image cap">
@@ -117,13 +117,31 @@
         </div>
         <a type="button" class="btn btn-primary" href="img/cards/ako4.jpg">Mas Info</a>
       </div>
-      <div class="card mb-3">
-        <img class="card-img-top img-fluid imcard" src="src/img/megaman/mmlg.png" alt="Card image cap">
-        <div class="card-body">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">This is a wider card with supporting text below as a </p>
+    </div>
+  </div>
+<!-- Modal -->
+ <div class="modal fade bd-example-modal-lg" id="modalmegaman1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Megaman</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <a type="button" class="btn btn-primary" href="img/cards/ako4.jpg">Mas Info</a>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <p>En el año 20XX (algún momento del siglo XXI), el genio de la robótica Dr. Thomas Light comenzó a trabajar en un proyecto cuyo fin era crear un robot humanoide. Este robot haría uso de un programa de inteligencia artificial avanzado que le permitiría tomar decisiones por sí mismo basado en estímulos y órdenes básicas. Él llamó a este proyecto Robot Master (Robot Maestro en español), porque resultaría en un robot capaz de supervisar el trabajo de otras máquinas menos inteligentes.</p>
+            </div>
+            <div class="col-12 col-md-6">
+              <img src="src/img/megaman/megamodal1.jpg" class="megasliderman rounded">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
