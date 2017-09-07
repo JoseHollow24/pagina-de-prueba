@@ -7,7 +7,7 @@
 </head>
 <body>
 <!-- navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top ">
     <a class="navbar-brand" href="#">
       <img src="src/img/megaman/icono.png" width="30" height="30" class="d-inline-block align-top" alt="" class="mx-3">
       Megaman
@@ -16,21 +16,26 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
-      <ul class="navbar-nav mr-auto text-center">
+      <ul class="navbar-nav ml-auto text-center">
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">historia</a>
+          <a class="nav-link" href="#historiamm">Historia</a>
         </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Historias
+            </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalmegaman1">Megaman</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalmegaman2">Megaman X</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalmegaman3">Megaman Zero</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalmegaman4">Megaman ZX</a>
+           </div>
+          </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">soundtracks</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Protagonistas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sugerencia de Videos</a>
+          <a class="nav-link" href="#">Ost</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Otros sitios</a>
@@ -66,7 +71,6 @@
 <!-- scontenido 1 -->
   <div class="container">
     <h1 class="text-center my-5 font-weight-bold text-danger"> Bievenidos Maverick Hunters </h1>
-
     <div class="p-3 mb-2 bg-info text-white rounded row">
       <div class="col-12 col-md-8">
         <p>Mega Man (conocido en Japón como Rockman ) es el personaje principal del videojuego Mega Man. Es un robot creado en el año 20XX por el Doctor Thomas Light dentro del universo de la saga de videojuegos homónima creada por Capcom en 1987 para la consola Nintendo Entertainment System.</p>
@@ -83,48 +87,79 @@
     </div>
   </div>
 <!-- cards -->
-  <div class="container mb-5">
-     <div class="card-deck mt-5 pt-5">
-      <div class="card mb-3">
-        <img class="card-img-top img-fluid imcard" src="src/img/megaman/cardmm.png" alt="Card image cap">
-        <div class="card-body">
-          <h4 class="card-title">Megaman</h4>
-          <p class="card-text"> primera subserie, ocurre en el año 20XX. Los enfrentamientos son entre Mega Man, creado por Dr. Light y los robot masters del Dr. Wily. La décima y última entrega, se ha disparado la roboenza, causando que ciertos robots y reploids se convirtieran en Mavericks.</p>
+  <div class="container mb-5" id="historiamm">
+    <h1 class="text-center my-5 font-weight-bold text-danger" > Historia </h1>
+     <div class="card-deck mt-5 ">
+        <div class="card mb-3">
+          <img class="card-img-top img-fluid imcard" src="src/img/megaman/cardmm.png" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Megaman</h4>
+            <p class="card-text"> primera subserie, ocurre en el año 20XX. Los enfrentamientos son entre Mega Man, creado por Dr. Light y los robot masters del Dr. Wily. La décima y última entrega, se ha disparado la roboenza, causando que ciertos robots y reploids se convirtieran en Mavericks.</p>
+          </div>
+          <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalmegaman1" href=""> Mas Info</a>
         </div>
-        <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalmegaman1" href="img/cards/ako1.jpg"> Mas Info</a>
+        <div class="card mb-3">
+          <img class="card-img-top img-fluid imcard" src="src/img/megaman/mmx.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Megaman X</h4>
+            <p class="card-text"> Segunda subserie, ocurre en el año 21XX (Empezó en 2114, según el arranque del primer videojuego, con el acceso del Dr. Cain). En esta subserie, se descubren los detalles del Zero Virus mientras que X se enfrenta a Sigma en varias oportunidades.</p>
+          </div>
+          <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalmegaman2" href=""> Mas Info</a>
+        </div>
+        <div class="card mb-3">
+          <img class="card-img-top img-fluid imcard" src="src/img/megaman/mmzero.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Megaman Zero</h4>
+            <p class="card-text">Tercera subserie, ocurre 102 años después de los eventos de Mega Man X. Debido a que X ya no está, Zero, reactivado por Ciel, debe detener las guerras Elf, organizadas por Weil.</p>
+          </div>
+          <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalmegaman3" href=""> Mas Info</a>
+        </div>    
+        <div class="card mb-3">
+          <img class="card-img-top img-fluid imcard" src="src/img/megaman/mmzx.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Megaman ZX</h4>
+            <p class="card-text">Cuarta subserie, ocurre aproximadamente 200 años después de los eventos de Zero. Debido a la destrucción de Zero, Ciel creó 7 biometals. Aile y Vent se enfrenta a los portadores del biometal y el creador original del dicho biometal.</p>
+          </div>
+          <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalmegaman4" href=""> Mas Info</a>
+        </div>
+    </div>
+  </div>
+<!-- Modal 1- megaman -->
+ <div class="modal fade bd-example-modal-lg" id="modalmegaman1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Megaman</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <div class="card mb-3">
-        <img class="card-img-top img-fluid imcard" src="src/img/megaman/mmx.jpeg" alt="Card image cap">
-        <div class="card-body">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">This is a wider card with supporting text below as a </p>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <p>En el año 20XX (algún momento del siglo XXI), el genio de la robótica Dr. Thomas Light comenzó a trabajar en un proyecto cuyo fin era crear un robot humanoide. Este robot haría uso de un programa de inteligencia artificial avanzado que le permitiría tomar decisiones por sí mismo basado en estímulos y órdenes básicas. Él llamó a este proyecto Robot Master (Robot Maestro en español), porque resultaría en un robot capaz de supervisar el trabajo de otras máquinas menos inteligentes.</p>
+            <div class="embed-responsive embed-responsive-16by9 mt-5 rounded">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/30VhRsLapt0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 d-flex align-items-center">
+            <img src="src/img/megaman/megamodal1.jpg" class="modalmanimg rounded">
+          </div>
         </div>
-        <a type="button" class="btn btn-primary" href="img/cards/ako2.jpg">Mas Info</a>
       </div>
-      <div class="card mb-3">
-        <img class="card-img-top img-fluid imcard" src="src/img/megaman/mmzero.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">This is a wider card with supporting text below as a </p>
-        </div>
-        <a type="button" class="btn btn-primary" href="img/cards/ako4.jpg">Mas Info</a>
-      </div>
-      <div class="card mb-3">
-        <img class="card-img-top img-fluid imcard" src="src/img/megaman/mmzx.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">This is a wider card with supporting text below as a </p>
-        </div>
-        <a type="button" class="btn btn-primary" href="img/cards/ako4.jpg">Mas Info</a>
+      <div class="modal-footer d-flex justify-content-between">
+        <a target="_blank" type="button" class="btn btn-primary" href="https://es.wikipedia.org/wiki/Mega_Man_(serie_original)">Enlace a Wikipedia</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-<!-- Modal -->
- <div class="modal fade bd-example-modal-lg" id="modalmegaman1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  </div>
+<!-- Modal 2- megaman X -->
+ <div class="modal fade bd-example-modal-lg" id="modalmegaman2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Megaman</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Megaman X</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -132,14 +167,78 @@
         <div class="modal-body">
           <div class="row">
             <div class="col-12 col-md-6">
-              <p>En el año 20XX (algún momento del siglo XXI), el genio de la robótica Dr. Thomas Light comenzó a trabajar en un proyecto cuyo fin era crear un robot humanoide. Este robot haría uso de un programa de inteligencia artificial avanzado que le permitiría tomar decisiones por sí mismo basado en estímulos y órdenes básicas. Él llamó a este proyecto Robot Master (Robot Maestro en español), porque resultaría en un robot capaz de supervisar el trabajo de otras máquinas menos inteligentes.</p>
+              <p>En el año 20XX, el Dr. Light creó un último robot llamado Mega Man X (conocido simplemente como X), un androide con la capacidad de tener propio razonamiento, emociones y decisiones. Sin embargo, el Dr. Light pensó que podría tener algunos fallos en su sistema físico y también, que podría romper la primera regla de la robótica: Un robot jamás debe dañar a un ser humano. Para evitar eso, decidió guardarlo en una cápsula para que esta revisara su confiabilidad y sus sistemas lógicos. Las pruebas llevarían un mínimo de 30 años y el Dr. Light no viviría hasta el final completo de las pruebas.</p>
+              <div class="embed-responsive embed-responsive-16by9 mt-5 rounded">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BYlYHJ4P4A8" allowfullscreen></iframe>
+              </div>
             </div>
-            <div class="col-12 col-md-6">
-              <img src="src/img/megaman/megamodal1.jpg" class="megasliderman rounded">
+            <div class="col-12 col-md-6 d-flex align-items-center">
+              <img src="src/img/megaman/Megaman X yay.jpg" class="modalmanimg rounded">
             </div>
           </div>
         </div>
-        <div class="modal-footer">
+        <div class="modal-footer d-flex justify-content-between">
+          <a target="_blank" type="button" class="btn btn-primary" href="https://es.wikipedia.org/wiki/Mega_Man_X_(serie)">Enlace a Wikipedia</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 3- megaman Zero -->
+ <div class="modal fade bd-example-modal-lg" id="modalmegaman3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Megaman Zero</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <p>Aproximadamente 100 años después de los eventos de Megaman X, Zero es reactivado por Ciel, una científica. Zero, quien no tiene memoria decide ayudar a Ciel, y destruir a Copy X. En este proceso, Zero debe enfrentar a los Cuatro Guardianes , Cuatro señores celestiales) de Neo Arcadia, Reploides creados a partir del ADN de X, cada uno con su propia armada/Gundan: Fighting Fefnir, Fairy/ Leviathan, Hidden Phantom, y Sage Harpuia, .</p>
+              <div class="embed-responsive embed-responsive-16by9 mt-5 rounded">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DJGn3KWIZEM" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-12 col-md-6" d-flex align-items-center>
+              <img src="src/img/megaman/megaman zero yay.jpg" class="modalmanimg rounded">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <a target="_blank" type="button" class="btn btn-primary" href="https://es.wikipedia.org/wiki/Mega_Man_Zero">Enlace a Wikipedia</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal 4- megaman ZX -->
+ <div class="modal fade bd-example-modal-lg" id="modalmegaman4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Megaman Zero</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <p>Máquinas feroces conocidas como Mavericks todavía existen en áreas no seguras, y desafortunadamente mucha de la tecnología más poderosa del mundo se ha perdido en las ruinas de dichas áreas. Varias personas formaron la banda de los Hunters para buscar y desenterrar las cosas de valor en esas ruinas. Mientras tanto, aquellos que no querían unirse a los Hunters y conseguir los tesoros por su propia cuenta fueron denominados Raiders, y a menudo ambos bandos se enfrentan entre sí a causa de querer obtener los tesoros. Además, Aile y Vent perdierón sus biometales, recuperándose solo 2 de ellos.</p>
+              <div class="embed-responsive embed-responsive-16by9 mt-5 rounded">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/X8FXdphBORw" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex align-items-center">
+              <img src="src/img/megaman/zx.jpg" class="modalmanimg rounded">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <a target="_blank" type="button" class="btn btn-primary" href="https://es.wikipedia.org/wiki/Mega_Man_ZX">Enlace a Wikipedia</a>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
